@@ -1,4 +1,5 @@
-import './App.scss'
+import './assets/style.css' // Adjust the path to where your style.css file is located
+
 
 function App() {
   return (
