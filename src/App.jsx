@@ -1,12 +1,17 @@
-import './assets/style.css' // Adjust the path to where your style.css file is located
-
+import './assets/style.css' 
+import MainForm from './pages/MainForm/MainForm.jsx';
+import { Title, Label, Logo } from './components/component.jsx';
 
 function App() {
   return (
-      <div>
-        <h1>Heart Disease Detection Project</h1>
-      </div>
-  )
+    <div style={{ backgroundColor: '#e0e0e0', minHeight: '100vh' }}>
+      {/* Render the MainForm component here */}
+      <Title />
+      <Label />
+      <Logo />
+      <MainForm />
+    </div>
+  );
 }
 
 export default App
