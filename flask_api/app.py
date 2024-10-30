@@ -6,4 +6,5 @@ app = Flask(__name__)
 @app.route('/get_prognosis', methods = ['GET'])
 
 def get_prognosis():
+    print("Hello")
     
