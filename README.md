@@ -12,6 +12,9 @@ This project allows for users to go to a web site and input their symptoms. Base
 - Tully Fitzpatrick (bfitzpa8)
 - Jayden Leuciuc (jleuciu1)
 
+## Model Being Used
+Link: https://www.kaggle.com/code/syedali110/heart-disease-detection/notebook
+
 ## Running the Project
 
 - Make sure you have a working node.js environment.
