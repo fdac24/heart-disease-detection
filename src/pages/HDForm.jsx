@@ -1,7 +1,7 @@
-import "../../assets/style.css"; // Assuming this file contains global styles
+import "../assets/style.css";
 import { useState } from "react";
 
-function MainForm() {
+function HDForm() {
   const [formData, setFormData] = useState({
     age: "",
     sex: "",
@@ -177,4 +177,6 @@ function MainForm() {
   );
 }
 
-export default MainForm;
+export default HDForm;
+
+

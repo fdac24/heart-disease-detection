@@ -1,110 +1,282 @@
 html, body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
 }
 
-body {
-  background-color: #ECECEC;
-}
-
-.main-form {
+.home {
+  background-color: #ffffff;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; /* Center form vertically */
-  min-height: 100vh; /* Full viewport height */
   width: 100%;
 }
 
-.main-form .div {
-  width: 80%; /* Set a width relative to the viewport */
-  max-width: 800px; /* Prevent the form from getting too wide */
-  background-color: #fff; /* White background for the form area */
-  padding: 20px; /* Padding inside the form */
-  border-radius: 10px; /* Optional: Round the form's corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+.home .div {
+  background-color: #ffffff;
+  height: 2621px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-/* Adjust the container properties */
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  height: 100vh;
-}
-
-.title {
-  font-size: 64px;
-  font-weight: bold;
-  color: #8a0000;
-  width: 60%;
-  margin: 0 20px; /* This keeps the horizontal margin */
-}
-
-
-.label {
-  text-align: left;
+.home .header {
+  color: #a70000;
+  font-family: "Kite One-Regular", Helvetica;
   font-size: 20px;
+  font-style: italic;
   font-weight: 400;
-  color: #000;
-  margin-top: 20px;
-  margin-left: 20px;
-  width: 60%;
+  left: 7px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 25px;
+  width: 284px;
 }
 
-.image {
+.home .disclaimer {
+  height: 181px;
+  left: 358px;
+  position: absolute;
+  top: 2197px;
+  width: 795px;
+}
+
+.home .welcome {
+  color: #a70000;
+  font-family: "Koh Santepheap-Bold", Helvetica;
+  font-size: 52px;
+  font-weight: 700;
+  left: 62px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 170px;
+  width: 860px;
+}
+
+.home .logo {
+  height: 393px;
+  left: 976px;
+  object-fit: cover;
+  position: absolute;
+  top: 170px;
+  width: 413px;
+}
+
+.home .welcome-text {
+  color: #000000;
+  font-family: "Kaisei Tokumin-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 62px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 430px;
+  width: 803px;
+}
+
+.home .heart {
+  height: 384px;
+  left: 111px;
+  position: absolute;
+  top: 683px;
+  width: 1695px;
+}
+
+.home .overlap-group {
+  height: 384px;
+  left: 505px;
   position: absolute;
   top: 0;
-  right: 0;
-  width: 30%;
-  height: 100vh;
-  margin-top: 50px;
+  width: 1186px;
 }
 
-.image .logo {
-  width: 346px;
-  height: 319px;
-  object-fit: cover;
+.home .ellipse {
+  background-color: #ff7b7b80;
+  border-radius: 593px / 184.5px;
+  height: 369px;
+  left: 0;
+  opacity: 0.75;
+  position: absolute;
+  top: 15px;
+  width: 1186px;
 }
 
-.text-wrapper {
-  margin-bottom: 20px;
+.home .ellipse-2 {
+  background-color: #ffbaba80;
+  border-radius: 593px / 184.5px;
+  height: 369px;
+  left: 0;
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+  width: 1186px;
 }
 
-.disclaimer {
-  font-size: small;
-  font-weight: bold;
-  color: #8a0000;
-  margin-top: 20px;
-  display: block;
+.home .heart-text {
+  color: #000000;
+  font-family: "Kaisei Tokumin-Regular", Helvetica;
+  font-size: 23px;
+  font-weight: 400;
+  left: 75px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 736px;
 }
 
-.italic {
+.home .text-wrapper {
+  color: #000000;
+  font-family: "Kaisei Tokumin-Regular", Helvetica;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.home .span {
+  font-family: "Kalnia-Regular", Helvetica;
+}
+
+.home .overlap {
+  height: 82px;
+  left: 0;
+  position: absolute;
+  top: 160px;
+  width: 394px;
+}
+
+.home .div-2 {
+  color: #a70000;
+  font-family: "Koh Santepheap-Bold", Helvetica;
+  font-size: 36px;
+  font-weight: 700;
+  height: 82px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 394px;
+}
+
+.home .text-wrapper-2 {
+  color: #a70000;
+  font-family: "Koh Santepheap-Bold", Helvetica;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.home .stats-instance {
+  height: 36px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0px !important;
+  width: 36px !important;
+}
+
+.home .goal {
+  height: 384px;
+  left: -321px;
+  position: absolute;
+  top: 1067px;
+  width: 1731px;
+}
+
+.home .overlap-2 {
+  height: 384px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1186px;
+}
+
+.home .goal-text {
+  color: #000000;
+  font-family: "Kaisei Tokumin-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 332px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 88px;
+  width: 678px;
+}
+
+.home .overlap-3 {
+  height: 82px;
+  left: 1333px;
+  position: absolute;
+  top: 151px;
+  width: 394px;
+}
+
+.home .sparkle {
+  height: 36px;
+  left: 65px;
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+
+.home .model {
+  height: 384px;
+  left: 111px;
+  position: absolute;
+  top: 1451px;
+  width: 1695px;
+}
+
+.home .model-text {
+  color: #000000;
+  font-family: "Kaisei Tokumin-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 90px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 95px;
+  width: 729px;
+}
+
+.home .overlap-4 {
+  height: 82px;
+  left: 0;
+  position: absolute;
+  top: 144px;
+  width: 394px;
+}
+
+.home .pencil {
+  height: 36px;
+  left: 47px;
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+
+.home .instructions {
+  color: #000000;
+  font-family: "Istok Web-Italic", Helvetica;
+  font-size: 28px;
   font-style: italic;
-}
-
-.label .bio,
-.label .text-wrapper {
-  margin-bottom: 50px;
-}
-
-.form-layout label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.form-layout input,
-.form-layout select {
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-
-.form-layout button {
-  background-color: #8a0000;
-  color:#fff;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  font-weight: 400;
+  left: 97px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1932px;
+  width: 1319px;
 }

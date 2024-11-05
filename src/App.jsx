@@ -1,15 +1,10 @@
 import './assets/style.css' 
-import MainForm from './pages/MainForm/MainForm.jsx';
-import { Title, Label, Logo } from './components/component.jsx';
+import { Home } from './pages/Home.jsx';
 
 function App() {
   return (
-    <div style={{ backgroundColor: '#ECECEC', minHeight: '100vh' }}>
-      {/* Render the MainForm component here */}
-      <Title />
-      <Label />
-      <Logo />
-      <MainForm />
+    <div>
+      <Home />
     </div>
   );
 }
