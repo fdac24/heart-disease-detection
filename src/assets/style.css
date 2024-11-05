@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kite+One:wght@400;700&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -24,7 +29,7 @@ html, body {
 
 .home .header {
   color: #a70000;
-  font-family: "Kite One-Regular", Helvetica;
+  font-family: "Kite One", Helvetica;
   font-size: 20px;
   font-style: italic;
   font-weight: 400;
@@ -47,14 +52,14 @@ html, body {
 
 .home .welcome {
   color: #a70000;
-  font-family: "Koh Santepheap-Bold", Helvetica;
+  font-family: 'Koh Santepheap', sans-serif;
   font-size: 52px;
   font-weight: 700;
   left: 62px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 170px;
+  top: 150px;
   width: 860px;
 }
 
@@ -63,13 +68,13 @@ html, body {
   left: 976px;
   object-fit: cover;
   position: absolute;
-  top: 170px;
+  top: 190px;
   width: 413px;
 }
 
 .home .welcome-text {
   color: #000000;
-  font-family: "Kaisei Tokumin-Regular", Helvetica;
+  font-family: 'Kaisei Tokumin', serif;
   font-size: 24px;
   font-weight: 400;
   left: 62px;
@@ -120,21 +125,21 @@ html, body {
 
 .home .heart-text {
   color: #000000;
-  font-family: "Kaisei Tokumin-Regular", Helvetica;
+  font-family: 'Kaisei Tokumin', serif;
   font-size: 23px;
   font-weight: 400;
-  left: 75px;
+  left: 80px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 100px;
+  top: 85px;
   width: 736px;
 }
 
 .home .text-wrapper {
   color: #000000;
-  font-family: "Kaisei Tokumin-Regular", Helvetica;
+  font-family: 'Kaisei Tokumin', serif;
   font-size: 23px;
   font-weight: 400;
   letter-spacing: 0;
@@ -154,7 +159,7 @@ html, body {
 
 .home .div-2 {
   color: #a70000;
-  font-family: "Koh Santepheap-Bold", Helvetica;
+  font-family: 'Koh Santepheap', sans-serif;
   font-size: 36px;
   font-weight: 700;
   height: 82px;
@@ -169,7 +174,7 @@ html, body {
 
 .home .text-wrapper-2 {
   color: #a70000;
-  font-family: "Koh Santepheap-Bold", Helvetica;
+  font-family: 'Koh Santepheap', sans-serif;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0;
@@ -201,7 +206,7 @@ html, body {
 
 .home .goal-text {
   color: #000000;
-  font-family: "Kaisei Tokumin-Regular", Helvetica;
+  font-family: 'Kaisei Tokumin', serif;
   font-size: 24px;
   font-weight: 400;
   left: 332px;
@@ -209,7 +214,7 @@ html, body {
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 88px;
+  top: 68px;
   width: 678px;
 }
 
@@ -239,7 +244,7 @@ html, body {
 
 .home .model-text {
   color: #000000;
-  font-family: "Kaisei Tokumin-Regular", Helvetica;
+  font-family: 'Kaisei Tokumin', serif;
   font-size: 24px;
   font-weight: 400;
   left: 90px;
@@ -247,7 +252,7 @@ html, body {
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 95px;
+  top: 68px;
   width: 729px;
 }
 
@@ -269,7 +274,7 @@ html, body {
 
 .home .instructions {
   color: #000000;
-  font-family: "Istok Web-Italic", Helvetica;
+  font-family: 'Istok Web', Helvetica;
   font-size: 28px;
   font-style: italic;
   font-weight: 400;
