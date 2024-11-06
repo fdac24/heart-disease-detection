@@ -85,6 +85,11 @@ export const Home = () => {
       <HDForm />
 
       <img className="disclaimer" alt="Disclaimer" src={disclaimer} />
+
+      <div className="footer">
+        <p>Univeristy of Tennessee, Knoxville</p>
+        <p>Fundamentals of Digital Archeology Course </p>
+      </div>
     </div>
   );
 };
