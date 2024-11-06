@@ -176,25 +176,9 @@ html, body {
   align-items: center;
   justify-content: center;
   margin: 20px 0;
+  margin-top: 60px;
   width: 100%;
   max-width: 800px;
-}
-
-.home .ellipse, .home .ellipse-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #ffbaba80;
-  opacity: 0.75;
-  z-index: 0; /* Ensure ellipses are in the background */
-}
-
-.home .ellipse-2 {
-  background-color: #ff7b7b80;
-  top: 15px; /* Adjust positioning to overlap ellipses */
 }
 
 /* Content container for icons and titles */
@@ -202,7 +186,6 @@ html, body {
   display: flex;
   align-items: center; /* Vertically align items */
   justify-content: flex-start; /* Align items to the start */
-  position: relative;
   z-index: 1; /* Make sure the content is above the ellipses */
   margin-bottom: 20px; /* Add space between the icon-title and text */
 }
@@ -231,4 +214,4 @@ html, body {
   max-width: 600px;
   position: relative;
   z-index: 1; /* Make sure the text is above the ellipses */
-}
+} 
