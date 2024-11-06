@@ -27,31 +27,12 @@ export const Home = () => {
         <img className="logo" alt="Logo" src={logo} />
       </div>
 
-      {/* Heart Statistics Section */}
-      <div className="overlap">
-        <div className="content">
-          <img className="stats-instance" alt="Statistics" src={stats} />
-          <p className="text-wrapper-2">Heart Statistics</p>
-        </div>
-        <div className="ellipse" />
-        <div className="ellipse-2" />
-        <p className="heart-text">
-          Heart disease is a serious health concern, affecting more than 1 in 10
-          adults in the U.S. It’s the leading cause of death, accounting for 1
-          in 4 deaths, with over 700,000 lives lost in 2022 alone. Advanced
-          imaging shows that nearly 70% of people tested have early signs of
-          coronary artery disease, yet 3 in 5 of these cases go undiagnosed.
-        </p>
-      </div>
-
       {/* Our Goal Section */}
       <div className="overlap-3">
         <div className="content">
           <img className="sparkle" alt="Sparkle" src={sparkle} />
           <p className="text-wrapper-2">Our Goal</p>
         </div>
-        <div className="ellipse" />
-        <div className="ellipse-2" />
         <p className="goal-text">
           As part of our studies, we developed this tool to help you quickly
           assess your heart disease risk. Our goal is to empower you with
@@ -62,14 +43,27 @@ export const Home = () => {
         </p>
       </div>
 
+      {/* Heart Statistics Section */}
+      <div className="overlap">
+        <div className="content">
+          <img className="stats-instance" alt="Statistics" src={stats} />
+          <p className="text-wrapper-2">Heart Statistics</p>
+        </div>
+        <p className="heart-text">
+          Heart disease is a serious health concern, affecting more than 1 in 10
+          adults in the U.S. It’s the leading cause of death, accounting for 1
+          in 4 deaths, with over 700,000 lives lost in 2022 alone. Advanced
+          imaging shows that nearly 70% of people tested have early signs of
+          coronary artery disease, yet 3 in 5 of these cases go undiagnosed.
+        </p>
+      </div>
+
       {/* Our Model Section */}
       <div className="overlap-4">
         <div className="content">
           <img className="pencil" alt="Pencil" src={pencil} />
           <p className="text-wrapper-2">Our Model</p>
         </div>
-        <div className="ellipse" />
-        <div className="ellipse-2" />
         <p className="model-text">
           Our heart disease assessment uses a machine learning model based on a
           trusted medical dataset. It analyzes factors like blood pressure and

@@ -102,51 +102,6 @@ html, body {
   max-width: 800px; /* Set a maximum width */
 }
 
-/* Text Sections */
-.home .heart-text {
-  color: #000000;
-  font-family: 'Kaisei Tokumin', serif;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: right;
-  margin: 20px 0;
-  width: 100%;
-  max-width: 800px;
-}
-
-.home .goal-text {
-  color: #000000;
-  font-family: 'Kaisei Tokumin', serif;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: left;
-  margin: 20px 0;
-  width: 100%;
-  max-width: 800px;
-}
-
-.home .model-text {
-  color: #000000;
-  font-family: 'Kaisei Tokumin', serif;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: right;
-  margin: 20px 0;
-  width: 100%;
-  max-width: 800px;
-}
-
-/* Ellipse Backgrounds
-.home .ellipse, .home .ellipse-2 {
-  background-color: #ff7b7b80;
-  border-radius: 50%;
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  opacity: 0.75;
-  margin: 20px 0;
-} */
-
 .home .instructions {
   color: #000000;
   display: block;
@@ -172,26 +127,33 @@ html, body {
 .home .overlap, .home .overlap-3, .home .overlap-4 {
   position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start; /* Default: align items to the left */
   align-items: center;
-  justify-content: center;
   margin: 20px 0;
-  margin-top: 60px;
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
+}
+
+.home .overlap-3, .home .overlap-4 {
+  justify-content: flex-start; /* Align "Heart Statistics" to the right */
+}
+
+.home .overlap {
+  justify-content: flex-end; /* Align "Our Goal" and "Our Model" to the left */
 }
 
 /* Content container for icons and titles */
 .home .content {
   display: flex;
-  align-items: center; /* Vertically align items */
-  justify-content: flex-start; /* Align items to the start */
-  z-index: 1; /* Make sure the content is above the ellipses */
-  margin-bottom: 20px; /* Add space between the icon-title and text */
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+  margin-bottom: 10px;
 }
 
 .home .content img {
-  margin-right: 10px; /* Space between the icon and the title */
+  height: 24px;
+  width: auto;
 }
 
 .home .text-wrapper-2 {
@@ -199,19 +161,26 @@ html, body {
   font-family: 'Koh Santepheap', sans-serif;
   font-size: 24px;
   font-weight: 700;
-  text-align: left;
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
+
+
 
 /* Text styling */
 .home .heart-text, .home .goal-text, .home .model-text {
   color: #000000;
   font-family: 'Kaisei Tokumin', serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   text-align: left;
-  margin: 20px 0;
-  max-width: 600px;
-  position: relative;
-  z-index: 1; /* Make sure the text is above the ellipses */
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 15px; /* Add space inside the box */
+  /* border: 1px solid #ccc; Create the border */
+  border-radius: 25px; /* Round the corners of the box (optional) */
+  box-shadow: 5px 5px 5px rgba(255, 123, 123, 0.7);
+  background-color: rgba(255, 186, 186, 0.45); /* Add a background color to the box (optional) */
 } 

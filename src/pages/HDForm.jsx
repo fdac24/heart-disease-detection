@@ -27,7 +27,6 @@ function HDForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Send formData to the backend or Flask server
     console.log(formData);
   };
 
@@ -43,6 +42,8 @@ function HDForm() {
               className="form-control"
               value={formData.age}
               onChange={handleChange}
+              required
+              min="0"
             />
           </div>
 
@@ -53,6 +54,7 @@ function HDForm() {
               className="form-select"
               value={formData.sex}
               onChange={handleChange}
+              required
             >
               <option value="">Select</option>
               <option value="male">Male</option>
@@ -67,6 +69,7 @@ function HDForm() {
               className="form-select"
               value={formData.cp}
               onChange={handleChange}
+              required
             >
               <option value="">Select</option>
               <option value="0">Typical Angina</option>
@@ -84,6 +87,8 @@ function HDForm() {
               className="form-control"
               value={formData.trestbps}
               onChange={handleChange}
+              required
+              min="0"
             />
           </div>
 
@@ -95,6 +100,8 @@ function HDForm() {
               className="form-control"
               value={formData.chol}
               onChange={handleChange}
+              required
+              min="0"
             />
           </div>
 
@@ -105,6 +112,7 @@ function HDForm() {
               className="form-select"
               value={formData.fbs}
               onChange={handleChange}
+              required
             >
               <option value="">Select</option>
               <option value="0">No</option>
@@ -119,6 +127,7 @@ function HDForm() {
               className="form-select"
               value={formData.restecg}
               onChange={handleChange}
+              required
             >
               <option value="">Select</option>
               <option value="0">Normal</option>
@@ -135,6 +144,8 @@ function HDForm() {
               className="form-control"
               value={formData.thalach}
               onChange={handleChange}
+              required
+              min="0"
             />
           </div>
 
@@ -145,6 +156,7 @@ function HDForm() {
               className="form-select"
               value={formData.exang}
               onChange={handleChange}
+              required
             >
               <option value="">Select</option>
               <option value="0">No</option>
@@ -160,6 +172,8 @@ function HDForm() {
               className="form-control"
               value={formData.oldpeak}
               onChange={handleChange}
+              required
+              min="0"
             />
           </div>
 
@@ -170,6 +184,7 @@ function HDForm() {
               className="form-select"
               value={formData.slope}
               onChange={handleChange}
+              required
             >
               <option value="">Select</option>
               <option value="0">Upsloping</option>
@@ -186,6 +201,8 @@ function HDForm() {
               className="form-control"
               value={formData.ca}
               onChange={handleChange}
+              required
+              min="0"
             />
           </div>
 
@@ -196,6 +213,7 @@ function HDForm() {
               className="form-select"
               value={formData.thal}
               onChange={handleChange}
+              required
             >
               <option value="">Select</option>
               <option value="0">Normal</option>
