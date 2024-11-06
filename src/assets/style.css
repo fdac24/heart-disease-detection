@@ -7,281 +7,228 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
-  height: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  font-family: 'Istok Web', Helvetica, sans-serif; /* Set default font */
 }
 
+/* Main container for the homepage */
 .home {
   background-color: #ffffff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.main-form {
+  display: block;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 70%;
+  margin-top: 20px; /* Adjust as needed */
 }
 
-.home .div {
-  background-color: #ffffff;
-  height: 2621px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+.btn-danger {
+  background-color: #ff0000;
+  border-color: #ff0000;
+  transition: background-color 0.3s;
 }
 
+.btn-danger:hover {
+  background-color: 	#a70000;
+  border-color: 	#a70000;
+}
+
+/* Header Section */
 .home .header {
   color: #a70000;
   font-family: "Kite One", Helvetica;
   font-size: 20px;
   font-style: italic;
   font-weight: 400;
-  left: 7px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 25px;
-  width: 284px;
+  text-align: left;
+  margin-top: 25px;
+  width: 100%;
 }
 
-.home .disclaimer {
-  height: 181px;
-  left: 358px;
-  position: absolute;
-  top: 2197px;
-  width: 795px;
+.home .logo {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  margin-left: 20px;
 }
 
+/* Header container to align .welcome and .logo side by side */
+.header-container {
+  display: flex;
+  align-items: center; /* Align items vertically at the center */
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 0;
+  margin-top: 60px;
+}
+
+/* Welcome text */
 .home .welcome {
   color: #a70000;
   font-family: 'Koh Santepheap', sans-serif;
   font-size: 52px;
   font-weight: 700;
-  left: 62px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 150px;
-  width: 860px;
-}
-
-.home .logo {
-  height: 393px;
-  left: 976px;
-  object-fit: cover;
-  position: absolute;
-  top: 190px;
-  width: 413px;
+  text-align: left;
+  margin: 20px 0;
+  width: auto; /* Adjust width to fit content */
 }
 
 .home .welcome-text {
   color: #000000;
   font-family: 'Kaisei Tokumin', serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
-  left: 62px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 430px;
-  width: 803px;
+  text-align: left; /* Align text to the left */
+  margin-top: 40px; /* Add space between .welcome and .welcome-text */
+  width: 100%;
+  max-width: 800px; /* Set a maximum width */
 }
 
-.home .heart {
-  height: 384px;
-  left: 111px;
-  position: absolute;
-  top: 683px;
-  width: 1695px;
-}
-
-.home .overlap-group {
-  height: 384px;
-  left: 505px;
-  position: absolute;
-  top: 0;
-  width: 1186px;
-}
-
-.home .ellipse {
-  background-color: #ff7b7b80;
-  border-radius: 593px / 184.5px;
-  height: 369px;
-  left: 0;
-  opacity: 0.75;
-  position: absolute;
-  top: 15px;
-  width: 1186px;
-}
-
-.home .ellipse-2 {
-  background-color: #ffbaba80;
-  border-radius: 593px / 184.5px;
-  height: 369px;
-  left: 0;
-  opacity: 0.75;
-  position: absolute;
-  top: 0;
-  width: 1186px;
-}
-
+/* Text Sections */
 .home .heart-text {
   color: #000000;
   font-family: 'Kaisei Tokumin', serif;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 400;
-  left: 80px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 85px;
-  width: 736px;
-}
-
-.home .text-wrapper {
-  color: #000000;
-  font-family: 'Kaisei Tokumin', serif;
-  font-size: 23px;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.home .span {
-  font-family: "Kalnia-Regular", Helvetica;
-}
-
-.home .overlap {
-  height: 82px;
-  left: 0;
-  position: absolute;
-  top: 160px;
-  width: 394px;
-}
-
-.home .div-2 {
-  color: #a70000;
-  font-family: 'Koh Santepheap', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  height: 82px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 394px;
-}
-
-.home .text-wrapper-2 {
-  color: #a70000;
-  font-family: 'Koh Santepheap', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
-.home .stats-instance {
-  height: 36px !important;
-  left: 0 !important;
-  position: absolute !important;
-  top: 0px !important;
-  width: 36px !important;
-}
-
-.home .goal {
-  height: 384px;
-  left: -321px;
-  position: absolute;
-  top: 1067px;
-  width: 1731px;
-}
-
-.home .overlap-2 {
-  height: 384px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1186px;
+  text-align: right;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 800px;
 }
 
 .home .goal-text {
   color: #000000;
   font-family: 'Kaisei Tokumin', serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
-  left: 332px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 68px;
-  width: 678px;
-}
-
-.home .overlap-3 {
-  height: 82px;
-  left: 1333px;
-  position: absolute;
-  top: 151px;
-  width: 394px;
-}
-
-.home .sparkle {
-  height: 36px;
-  left: 65px;
-  position: absolute;
-  top: 0px;
-  width: 36px;
-}
-
-.home .model {
-  height: 384px;
-  left: 111px;
-  position: absolute;
-  top: 1451px;
-  width: 1695px;
+  text-align: left;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 800px;
 }
 
 .home .model-text {
   color: #000000;
   font-family: 'Kaisei Tokumin', serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
-  left: 90px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 68px;
-  width: 729px;
+  text-align: right;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 800px;
 }
 
-.home .overlap-4 {
-  height: 82px;
-  left: 0;
-  position: absolute;
-  top: 144px;
-  width: 394px;
-}
-
-.home .pencil {
-  height: 36px;
-  left: 47px;
-  position: absolute;
-  top: 0px;
-  width: 36px;
-}
+/* Ellipse Backgrounds
+.home .ellipse, .home .ellipse-2 {
+  background-color: #ff7b7b80;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  opacity: 0.75;
+  margin: 20px 0;
+} */
 
 .home .instructions {
   color: #000000;
+  display: block;
   font-family: 'Istok Web', Helvetica;
-  font-size: 28px;
+  font-size: 20px;
   font-style: italic;
   font-weight: 400;
-  left: 97px;
-  letter-spacing: 0;
-  line-height: normal;
+  width: 90%; /* Make the element span 90% of the page width */
+  max-width: 1200px; /* Set a maximum width to keep the content manageable */
+  margin: 40px auto; /* Center the element horizontally and add vertical space */
+}
+
+
+.home .disclaimer {
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0;
+  max-width: 800px;
+}
+
+/* General styles for the overlap sections */
+.home .overlap, .home .overlap-3, .home .overlap-4 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.home .ellipse, .home .ellipse-2 {
   position: absolute;
-  top: 1932px;
-  width: 1319px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffbaba80;
+  opacity: 0.75;
+  z-index: 0; /* Ensure ellipses are in the background */
+}
+
+.home .ellipse-2 {
+  background-color: #ff7b7b80;
+  top: 15px; /* Adjust positioning to overlap ellipses */
+}
+
+/* Content container for icons and titles */
+.home .content {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: flex-start; /* Align items to the start */
+  position: relative;
+  z-index: 1; /* Make sure the content is above the ellipses */
+  margin-bottom: 20px; /* Add space between the icon-title and text */
+}
+
+.home .content img {
+  margin-right: 10px; /* Space between the icon and the title */
+}
+
+.home .text-wrapper-2 {
+  color: #a70000;
+  font-family: 'Koh Santepheap', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0; /* Remove default margin */
+}
+
+/* Text styling */
+.home .heart-text, .home .goal-text, .home .model-text {
+  color: #000000;
+  font-family: 'Kaisei Tokumin', serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+  margin: 20px 0;
+  max-width: 600px;
+  position: relative;
+  z-index: 1; /* Make sure the text is above the ellipses */
 }
