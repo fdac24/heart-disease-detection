@@ -1,5 +1,6 @@
 import "../assets/style.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function HDForm() {
   const [formData, setFormData] = useState({
@@ -18,6 +19,8 @@ function HDForm() {
     thal: "",
   });
 
+  const navigate = useNavigate();
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -25,9 +28,32 @@ function HDForm() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    try {
+      // Convert form data to the required format
+      const dataToSend = {
+        features: Object.values(formData).map(value => 
+          isNaN(value) ? value : parseFloat(value) // Convert numeric values to floats
+        ),
+      };
+
+      // Send a POST request to the Flask API
+      const response = await fetch("http://127.0.0.1:5000/predict", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataToSend),
+      });
+
+      const result = await response.json();
+      // Navigate to the Results page with the prediction result
+      navigate("/results", { state: { result } });
+    } catch (error) {
+      console.error("Error connecting to the API:", error);
+    }
   };
 
   return (
@@ -57,8 +83,8 @@ function HDForm() {
               required
             >
               <option value="">Select</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+              <option value="0">Female</option>
+              <option value="1">Male</option>
             </select>
           </div>
 
@@ -174,6 +200,7 @@ function HDForm() {
               onChange={handleChange}
               required
               min="0"
+              step="0.1"
             />
           </div>
 
@@ -187,9 +214,9 @@ function HDForm() {
               required
             >
               <option value="">Select</option>
-              <option value="0">Upsloping</option>
-              <option value="1">Flat</option>
-              <option value="2">Downsloping</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
             </select>
           </div>
 
@@ -216,9 +243,9 @@ function HDForm() {
               required
             >
               <option value="">Select</option>
-              <option value="0">Normal</option>
-              <option value="1">Fixed Defect</option>
-              <option value="2">Reversible Defect</option>
+              <option value="1">Normal</option>
+              <option value="2">Fixed Defect</option>
+              <option value="3">Reversible Defect</option>
             </select>
           </div>
 

@@ -87,9 +87,11 @@ export const Home = () => {
       <img className="disclaimer" alt="Disclaimer" src={disclaimer} />
 
       <div className="footer">
-        <p>Univeristy of Tennessee, Knoxville</p>
+        <p>University of Tennessee, Knoxville</p>
         <p>Fundamentals of Digital Archeology Course </p>
       </div>
     </div>
   );
 };
+
+export default Home;
