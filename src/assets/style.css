@@ -119,6 +119,7 @@ html, body {
   font-size: 18px;
   text-align: center;
   margin: 20px 0;
+  margin-top: 40px;
   max-width: 800px;
 }
 
@@ -197,4 +198,52 @@ html, body {
   background-color: #a70000;
   opacity: 90%;
 
+}
+
+.you-are-at {
+  /* styles for the 'You Are At' text */
+  color: black;
+  font-family: 'Kaisei Tokumin', serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px 0;
+  width: auto;
+}
+
+.prediction {
+  /* styles for the prediction text */
+  color: #a70000;
+  font-family: 'Koh Santepheap', sans-serif;
+  font-style: italic;
+  font-size: 52px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: auto;
+}
+
+.results-breakdown {
+   /* styles for the 'You Are At' text */
+   color: black;
+   font-family: 'Kaisei Tokumin', serif;
+   font-style: normal;
+   font-size: 22px;
+   font-weight: 400;
+   text-align: center;
+   margin: 20px 0;
+   width: auto;
+}
+
+.assessment {
+  color: #000000;
+  display: block;
+  font-family: 'Istok Web', Helvetica;
+  font-size: 19px;
+  font-weight: 400;
+  text-align: justify;
+  width: 90%; /* Make the element span 90% of the page width */
+  max-width: 1200px; /* Set a maximum width to keep the content manageable */
+  margin: 20px auto; /* Center the element horizontally and add vertical space */
 }

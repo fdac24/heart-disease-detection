@@ -230,6 +230,7 @@ function HDForm() {
               onChange={handleChange}
               required
               min="0"
+              max="3"
             />
           </div>
 
