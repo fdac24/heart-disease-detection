@@ -8,9 +8,13 @@ function Results() {
 
   return (
     <div className="home">
+      <div className="header">Heart Disease Detection Tool</div>
       <div className="header-container">
         <div className="text-container">
           <p className="welcome">Results for Your Heart Health Assessment</p>
+          <p className="welcome-text">
+            Please find your heart disease risk assessment results below.
+          </p>
         </div>
         <img className="logo" alt="Logo" src={logo} />
       </div>

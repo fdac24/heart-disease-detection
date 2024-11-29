@@ -204,7 +204,8 @@ html, body {
   /* styles for the 'You Are At' text */
   color: black;
   font-family: 'Kaisei Tokumin', serif;
-  font-size: 22px;
+  font-size: 27px;
+  font-style: italic;
   font-weight: 400;
   text-align: center;
   margin: 20px 0;
@@ -215,7 +216,6 @@ html, body {
   /* styles for the prediction text */
   color: #a70000;
   font-family: 'Koh Santepheap', sans-serif;
-  font-style: italic;
   font-size: 52px;
   font-weight: 700;
   text-align: center;
@@ -229,7 +229,8 @@ html, body {
    color: black;
    font-family: 'Kaisei Tokumin', serif;
    font-style: normal;
-   font-size: 22px;
+   font-size: 27px;
+   font-style: italic;
    font-weight: 400;
    text-align: center;
    margin: 20px 0;
@@ -240,10 +241,14 @@ html, body {
   color: #000000;
   display: block;
   font-family: 'Istok Web', Helvetica;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 400;
+  border: 2px #ff7b7b solid;
+  border-radius: 25px;
+  background: 	#f5d6d6;
   text-align: justify;
   width: 90%; /* Make the element span 90% of the page width */
   max-width: 1200px; /* Set a maximum width to keep the content manageable */
   margin: 20px auto; /* Center the element horizontally and add vertical space */
+  padding: 20px; /* Adds space between the border and the text */
 }
