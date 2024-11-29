@@ -18,6 +18,11 @@ Link: https://www.kaggle.com/code/syedali110/heart-disease-detection/notebook
 ## Running the Project
 
 - Make sure you have a working node.js environment.
+- To start Flask server:
+  1. Make sure you are running with Python >= 3.10v. You can run `python3.10 -m venv venv` to create the virtual environment.
+  2. Activate the venv `source venv/bin/activate`
+  3. Run `pip install -r requirements.txt`
+  4. CD into `flask_api` and run `python3 app.py`
 - Run `npm install`
 - Then `npm run dev`
 - The development server should start on localhost, and be available in the browser.
